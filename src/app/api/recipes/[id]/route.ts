@@ -3,7 +3,7 @@ import { Recipe } from '@/models/recipe';
 import { getServerSession } from 'next-auth';
 import { NextRequest, NextResponse } from 'next/server';
 
-import { authOptions } from '../../auth/[...nextauth]/route';
+import { authOptions } from '@/utils/auth';
 
 export async function GET(_request: NextRequest, { params }: { params: Promise<{ id: string }> }): Promise<NextResponse<Recipe | unknown>> {
     const session = await getServerSession(authOptions);

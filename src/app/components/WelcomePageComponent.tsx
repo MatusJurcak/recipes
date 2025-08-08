@@ -1,0 +1,28 @@
+'use client';
+
+import { motion } from 'framer-motion';
+import Link from 'next/link';
+
+export default function WelcomePageComponent() {
+    return (
+        <motion.div initial={{ x: '-100%', opacity: 0 }} animate={{ x: 0, opacity: 1 }} transition={{ duration: 0.5, ease: 'easeInOut' }}>
+            <div className="flex flex-col space-y-4">
+                <h1>Welcome to My Recipes, dear traveler! 👨‍🍳</h1>
+                <p className="text-lg mb-5">
+                    You&apos;ve stumbled upon a cozy corner of the internet where flavor meets memory. Here, every recipe tells a story —
+                    some are experiments, others are rituals.
+                </p>
+                <p className="text-lg mb-5">
+                    Head over to{' '}
+                    <Link href="/recipes" className="text-blue-600 underline">
+                        Recipes
+                    </Link>{' '}
+                    to find what you’re in the mood for.
+                </p>
+                <p className="text-sm text-gray-500 mt-6">
+                    <span className="italic">Psst… you have to be logged in to see the real content. </span>😉
+                </p>
+            </div>
+        </motion.div>
+    );
+}

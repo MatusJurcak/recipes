@@ -10,7 +10,11 @@
         "lint:fix": "next lint --fix && prettier --write ."
     },
     "dependencies": {
+        "@emotion/react": "^11.14.0",
+        "@emotion/styled": "^11.14.1",
+        "@mui/material": "^7.3.1",
         "autoprefixer": "^10.4.21",
+        "motion": "^12.23.12",
         "next": "15.4.5",
         "next-auth": "^4.24.11",
         "postcss": "^8.5.6",

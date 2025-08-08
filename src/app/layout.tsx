@@ -1,20 +1,16 @@
 import '../styles/globals.scss';
 
 import SessionProvider from './components/SessionProvider';
-import { Geist, Geist_Mono } from 'next/font/google';
+import { Geist, Geist_Mono, Source_Sans_3 } from 'next/font/google';
 import { getServerSession } from 'next-auth';
 
 import type { Metadata } from 'next';
 import MyLayout from './components/Layout';
 
-const geistSans = Geist({
-    variable: '--font-geist-sans',
+const sans = Source_Sans_3({
+    variable: '--font-sans',
     subsets: ['latin'],
-});
-
-const geistMono = Geist_Mono({
-    variable: '--font-geist-mono',
-    subsets: ['latin'],
+    weight: ['300', '400', '500', '600', '700'],
 });
 
 export const metadata: Metadata = {
@@ -27,7 +23,7 @@ export default async function RootLayout({ children }: Readonly<{ children: Reac
 
     return (
         <html lang="en">
-            <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
+            <body className={`${sans.variable} ${sans.className} antialiased`}>
                 <SessionProvider session={session}>
                     <MyLayout>{children}</MyLayout>
                 </SessionProvider>

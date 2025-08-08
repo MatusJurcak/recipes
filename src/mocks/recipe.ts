@@ -74,5 +74,70 @@ export const ALL_RECIPES: Recipe[] = [
                 ],
             },
         ],
+        estimatedTime: '60 minutes',
+        servings: 6,
+    },
+    {
+        id: 1,
+        categories: ['Sauces'],
+        title: 'Tzatziki',
+        description: 'A refreshing Greek yogurt-based sauce with cucumbers and garlic.',
+        ingredients: [
+            {
+                name: 'Greek yogurt',
+                quantity: 250,
+                quantityType: 'milliliters',
+            },
+            {
+                name: 'cucumber (grated)',
+                quantity: 1,
+                quantityType: 'none',
+            },
+            {
+                name: 'cloves of garlic (minced)',
+                quantity: 2,
+                quantityType: 'none',
+            },
+            {
+                name: 'olive oil',
+                quantity: 2,
+                quantityType: 'tablespoon',
+            },
+            {
+                name: 'vinegar',
+                quantity: 1,
+                quantityType: 'tablespoon',
+            },
+            {
+                name: 'salt',
+                quantity: 1,
+                quantityType: 'teaspoon',
+            },
+            {
+                name: 'pepper',
+                quantity: 1,
+                quantityType: 'teaspoon',
+            },
+            {
+                name: 'dill',
+                quantity: 1,
+                quantityType: 'none',
+            },
+        ],
+        createdAt: new Date('2025-08-05').toISOString(),
+        updatedAt: new Date('2025-08-05').toISOString(),
+        instructionSections: [
+            {
+                title: 'For the sauce',
+                instructions: [
+                    'In a bowl, combine the Greek yogurt, grated cucumber, minced garlic, olive oil, vinegar, and salt.',
+                    'Mix well until all ingredients are fully incorporated.',
+                    'Taste and adjust seasoning if necessary.',
+                    'Serve chilled as a dip or sauce.',
+                ],
+            },
+        ],
+        estimatedTime: '15 minutes',
+        servings: 10,
     },
 ];

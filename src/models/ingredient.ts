@@ -7,7 +7,7 @@ export interface Ingredient {
     quantityType: QuantityType;
 }
 
-export const QuantityAbbreviations: Record<QuantityType, string> = {
+export const QUANTITY_TYPE_ABBREVIATIONS_MAP: Record<QuantityType, string> = {
     grams: 'g',
     tablespoon: 'tbsp',
     teaspoon: 'tsp',
@@ -16,7 +16,7 @@ export const QuantityAbbreviations: Record<QuantityType, string> = {
     none: '',
 };
 
-export const QuantityLables: Record<QuantityType, string> = {
+export const QUANTITY_TYPE_LABELS_MAP: Record<QuantityType, string> = {
     grams: 'grams',
     tablespoon: 'tablespoon(s)',
     teaspoon: 'teaspoon(s)',

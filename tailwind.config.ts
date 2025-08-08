@@ -15,9 +15,16 @@ const config = {
                 background: '#fffff5',
                 navbar: '#f5e7c1',
                 'gray-background': 'rgb(232, 232, 232)',
+                brown: {
+                    dark: '#4b3c2a',
+                },
+            },
+            transitionProperty: {
+                height: 'max-height, height, padding, margin',
             },
         },
     },
+    important: true,
 } satisfies Config;
 
 export default config;

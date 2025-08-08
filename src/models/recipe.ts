@@ -36,4 +36,7 @@ export interface Recipe {
     imageUrl?: string;
     createdAt: string;
     updatedAt: string;
+
+    estimatedTime: string;
+    servings: number;
 }
