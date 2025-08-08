@@ -25,12 +25,12 @@ export default function CategoriesList({ recipes }: { recipes?: Recipe[] }) {
                         transition={{ duration: 0.4 }}
                     >
                         <h1>Categories</h1>
-                        <div className="flex mt-10 flex-wrap w-2/3 mx-auto justify-center">
-                            <div className="p-4 w-1/3">
+                        <div className="flex mt-10 flex-wrap w-full lg:w-2/3 lg:mx-auto justify-center">
+                            <div className="p-2 lg:p-4 w-1/2 lg:w-1/3">
                                 <CategoryButton category="All" onClick={() => setCategory('All')} />
                             </div>
                             {RecipeCategories.map((category) => (
-                                <div key={category} className="p-4 w-1/3">
+                                <div key={category} className="p-2 lg:p-4 w-1/2 lg:w-1/3">
                                     <CategoryButton category={category} onClick={() => setCategory(category)} />
                                 </div>
                             ))}
@@ -44,11 +44,11 @@ export default function CategoriesList({ recipes }: { recipes?: Recipe[] }) {
                         exit={{ opacity: 0, x: 100 }}
                         transition={{ duration: 0.4 }}
                     >
-                        <div className="flex">
+                        <div className="flex items-start">
                             <h1>List of Recipes - {category}</h1>
-                            <div className="flex-grow flex justify-end">
+                            <div className="flex-grow flex whitespace-nowrap justify-end">
                                 <button
-                                    className="hover:cursor-pointer transition-all hover:text-gray-600"
+                                    className="hover:cursor-pointer transition-all mt-2 hover:text-gray-600"
                                     onClick={() => setCategory(null)}
                                 >
                                     Go back

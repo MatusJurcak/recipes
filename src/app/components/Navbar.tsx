@@ -11,8 +11,8 @@ export default function NavBar() {
     return (
         <nav className="bg-navbar p-4 z-10 shadow-md">
             <div className="flex items-center max-w-screen-xl mx-auto">
-                <h1 className="text-2xl font-bold">Recipes</h1>
-                <div className="flex-grow px-6">
+                <h1 className="text-2xl hidden lg:block font-bold">My Recipes</h1>
+                <div className="flex-grow lg:px-6">
                     <ul className="flex space-x-4">
                         <li>
                             <Link href="/">Home</Link>

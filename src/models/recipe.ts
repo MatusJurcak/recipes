@@ -4,7 +4,7 @@ export const RecipeCategories = [
     'Appetizers',
     'Salads',
     'Soups',
-    'Meats',
+    'Meat',
     'Pasta',
     'Fish',
     'Desserts',

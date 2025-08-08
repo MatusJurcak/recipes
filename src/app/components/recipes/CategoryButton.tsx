@@ -27,7 +27,7 @@ export function CategoryIcon({ category, className }: { category: RecipeCategory
             return <GiCakeSlice size={40} className={`${className}`} />;
         case 'Fish':
             return <GiFishSmoking size={40} className={`${className}`} />;
-        case 'Meats':
+        case 'Meat':
             return <GiMeat size={40} className={`${className}`} />;
         case 'Vegetarian':
             return <TbMeatOff size={40} className={`${className}`} />;
